@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"pulsesensor_test\startup_stm32f103xb.o"
+"pulsesensor_test\main.o"
+"pulsesensor_test\stm32f1xx_it.o"
+"pulsesensor_test\stm32f1xx_hal_msp.o"
+"pulsesensor_test\system_stm32f1xx.o"
+"pulsesensor_test\stm32f1xx_hal_gpio_ex.o"
+"pulsesensor_test\stm32f1xx_hal_adc.o"
+"pulsesensor_test\stm32f1xx_hal_adc_ex.o"
+"pulsesensor_test\stm32f1xx_hal.o"
+"pulsesensor_test\stm32f1xx_hal_rcc.o"
+"pulsesensor_test\stm32f1xx_hal_rcc_ex.o"
+"pulsesensor_test\stm32f1xx_hal_gpio.o"
+"pulsesensor_test\stm32f1xx_hal_dma.o"
+"pulsesensor_test\stm32f1xx_hal_cortex.o"
+"pulsesensor_test\stm32f1xx_hal_pwr.o"
+"pulsesensor_test\stm32f1xx_hal_flash.o"
+"pulsesensor_test\stm32f1xx_hal_flash_ex.o"
+"pulsesensor_test\stm32f1xx_hal_tim.o"
+"pulsesensor_test\stm32f1xx_hal_tim_ex.o"
+"pulsesensor_test\stm32f1xx_hal_uart.o"
+--library_type=microlib --strict --scatter "pulsesensor_test\pulsesensor_test.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "pulsesensor_test.map" -o pulsesensor_test\pulsesensor_test.axf
